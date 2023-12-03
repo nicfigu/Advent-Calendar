@@ -1,9 +1,9 @@
 import re
-
-R_MAX = 12
-B_MAX = 14
-G_MAX = 13
 def check_game(line):
+    #The maximum allowed number of cubes for each color
+    R_MAX = 12
+    B_MAX = 14
+    G_MAX = 13
     num = re.search(r'Game (\d+):', line)
     game_number = int(num.group(1))
     #check reds
